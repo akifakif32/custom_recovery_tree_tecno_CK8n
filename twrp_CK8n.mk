@@ -17,6 +17,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Inherit from CK8n device
 $(call inherit-product, device/tecno/CK8n/device.mk)
 
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 PRODUCT_DEVICE := CK8n
 PRODUCT_NAME := twrp_CK8n
 PRODUCT_BRAND := tecno
